@@ -609,3 +609,9 @@ h2.table-title {
 .chart-title {
     font-weight: 500 !important;
 }
+.article-p {
+    text-align: center;
+}
+h1.article-header {
+    text-align: center;
+}
