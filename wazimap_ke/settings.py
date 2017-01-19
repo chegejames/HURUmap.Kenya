@@ -47,7 +47,7 @@ WAZIMAP['topics'] = OrderedDict()
 WAZIMAP['topics']['census'] = {
         'topic': 'census',
         'name': 'census 2009',
-        'icon': 'fa-users',
+        'icon': '/static/img/census.png',
         'order': 1,
         'desc': 'Census data collected in 2009 provided by the Kenya National Bureau of Statistics',
         'profiles': [
@@ -57,14 +57,24 @@ WAZIMAP['topics']['census'] = {
             'Protests',
             'School fires',
             'Crime report',
-            'Education',
             'Employment',
         ]
     }
+
+WAZIMAP['topics']['education'] = {
+    'topic': 'education',
+    'name': 'education',
+    'icon': '/static/img/education.png',
+    'desc': 'Education data from Twaweza',
+    'profiles': [
+        'Education',
+    ]
+}
+
 WAZIMAP['topics']['health'] = {
         'topic': 'health',
         'name': 'health',
-        'icon': 'fa-medkit',
+        'icon': '/static/img/health.png',
         'order': 2,
         'desc': 'Health data collected in 2014 by the Kenya National Bureau of Statistics ',
         'profiles': [
@@ -82,7 +92,7 @@ WAZIMAP['topics']['health'] = {
 WAZIMAP['topics']['agriculture'] = {
         'topic': 'agriculture',
         'name': 'agriculture',
-        'icon': 'fa-leaf',
+        'icon': '/static/img/development.png',
         'order': 3,
         'desc': 'Crop production and Livestock population for the year 2014 provided by the Ministry of Agriculture, Livestock and Fisheries.',
         'profiles': [
