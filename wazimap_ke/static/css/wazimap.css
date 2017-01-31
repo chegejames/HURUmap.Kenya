@@ -380,6 +380,9 @@ h2.table-title {
 .topics-topic i {
     font-size:80px;;
 }
+.topics-topic img {
+    height:95px;
+}
 .topics-topic ul {
     list-style:none;
 }
