@@ -7,7 +7,7 @@ from wazimap.settings import *  # noqa
 
 
 # insert our overrides before both census and wazimap
-INSTALLED_APPS = ['wazimap_ke'] + INSTALLED_APPS
+INSTALLED_APPS = ['hurumap_ke'] + INSTALLED_APPS
 
 
 DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://wazimap:wazimap@localhost/wazimap')
@@ -16,11 +16,11 @@ DATABASES['default']['ATOMIC_REQUESTS'] = True
 
 
 # Localise this instance of Wazimap
-WAZIMAP['name'] = 'WAZImap Kenya'
+WAZIMAP['name'] = 'HURUmap Kenya'
 WAZIMAP['url'] = 'http://kenya.wazimap.codeforafrica.org'
 WAZIMAP['country_code'] = 'KE'
 WAZIMAP['country_name'] = 'Kenya'
-WAZIMAP['profile_builder'] = 'wazimap_ke.profiles.get_census_profile'
+WAZIMAP['profile_builder'] = 'hurumap_ke.profiles.get_census_profile'
 WAZIMAP['levels'] = {
     'country': {
         'plural': 'countries',

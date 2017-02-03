@@ -7,7 +7,7 @@ from django.conf import settings
 
 
 # ensure tables are loaded
-import wazimap_ke.tables  # noqa
+import hurumap_ke.tables  # noqa
 
 SECTIONS = settings.WAZIMAP.get('topics', {})
 
