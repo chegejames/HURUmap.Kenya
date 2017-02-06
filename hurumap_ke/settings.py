@@ -20,6 +20,7 @@ WAZIMAP['name'] = 'HURUmap Kenya'
 WAZIMAP['url'] = 'http://kenya.hurumap.org'
 WAZIMAP['country_code'] = 'KE'
 WAZIMAP['country_name'] = 'Kenya'
+WAZIMAP['country_profile'] = 'country-KE-Kenya'
 WAZIMAP['profile_builder'] = 'hurumap_ke.profiles.get_census_profile'
 WAZIMAP['levels'] = {
     'country': {
