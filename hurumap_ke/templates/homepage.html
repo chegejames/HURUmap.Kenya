@@ -54,63 +54,9 @@
     </article>
 </div>
 
+{% block howitworks %} {% endblock %}
+{% block showcase %} {% endblock %}
 
-<div class="content-container clearfix howitworks" id="howitworks">
-    <article class="clearfix wrapper">
-        <header class="column-full">
-            <h1 class="article-header">How it Works</h1>
-        </header>
-        <section>
-            <div class="column-third callout with-icon">
-                <center><img src="/static/img/find_facts.png"/></center>
-                <h3>Find facts</h3>
-                <p>Populations and financial figures are broken down by category: Elections, Demographics, Service Delivery, Economics and Education.</p>
-            </div>
-            <div class="column-third callout with-icon">
-                <center><img src="/static/img/get_context.png"/></center>
-                <h3>Visualize</h3>
-                <p>Our library of charts gives you insight into data from the places you research. Look for them on profile pages. You can even <a href="{% url 'example_detail' 'embed-charts' %}">embed the charts</a> on your own site.</p>
-            </div>
-            <div class="column-third callout with-icon">
-                <center><img src="/static/img/visualise.png"/></center>
-                <h3>Get context</h3>
-                <p>Pre-computed statistics are presented alongside each data point, so you can see how each place fits into a larger context.</p>
-            </div>
-        </section>
-    </article>
-</div>
-
-<div class="content-container clearfix showcase">
-    <article class="clearfix wrapper">
-        <header class="column-full">
-            <h1 class="article-header">Explore our Showcase</h1>
-            <p class="article-p">Sample stories written with the help of HURUmap</p>
-        </header>
-        <section>
-            <div class="column-third callout with-icon">
-                <img src="{% static 'img/crowds.jpg' %}"/>
-                <h2>The jobless millions</h2>
-                <p>By Frankline Sunday</p>
-                <p>Only one in every five Kenyan youth of working age is employed compared to one in 20 in Uganda and Tanzania. This is three times the rate of unemployment among the youth in Uganda and Tanzania.</p>
-                <center><button>Read more</button></center>
-            </div>
-            <div class="column-third callout with-icon">
-                <img src="{% static 'img/school.jpg' %}"/>
-                <h2>No school, No job?</h2>
-                 <p>By Frankline Sunday</p>
-                <p>Every day, groups of young people can be seen congregating in open spaces in the city and other urban areas which have become known as ‘job corners’.</p>
-                <center><button>Read more</button></center>
-            </div>
-            <div class="column-third callout with-icon">
-                <img src="{% static 'img/money.jpg' %}"/>
-                <h2>The curse of youth unemployment cash</h2>
-                <p>By Frankline Sunday</p>
-                <p>Kenyans have been left reeling as reports emerge of how resources allocated for the empowerment of the huge mass of unemployed youth disappeared ...</p>
-                <center><button>Read more</button></center>
-            </div>
-        </section>
-    </article>
-</div>
 <div style="display:none">
     <img src="{% static 'img/census_over.png' %}"/>
     <img src="{% static 'img/development_over.png' %}"/>
