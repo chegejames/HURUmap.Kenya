@@ -885,7 +885,7 @@ h1.article-header-right {
 .callout {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
-    padding: 0;
+    padding: 0px 10px;
 }
 .callout.with-icon {
     text-align: center;

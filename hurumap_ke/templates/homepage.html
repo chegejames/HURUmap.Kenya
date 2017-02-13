@@ -54,9 +54,63 @@
     </article>
 </div>
 
-{% block howitworks %} {% endblock %}
-{% block showcase %} {% endblock %}
 
+<div class="content-container clearfix howitworks" id="howitworks">
+    <article class="clearfix wrapper">
+        <header class="column-full">
+            <h1 class="article-header">How it Works</h1>
+        </header>
+        <section>
+            <div class="column-third callout with-icon">
+                <center><img src="/static/img/find_facts.png"/></center>
+                <h3>Find facts</h3>
+                <p>Populations and financial figures are broken down by category: Elections, Demographics, Service Delivery, Economics and Education.</p>
+            </div>
+            <div class="column-third callout with-icon">
+                <center><img src="/static/img/get_context.png"/></center>
+                <h3>Visualize</h3>
+                <p>Our library of charts gives you insight into data from the places you research. Look for them on profile pages. You can even <a href="{% url 'example_detail' 'embed-charts' %}">embed the charts</a> on your own site.</p>
+            </div>
+            <div class="column-third callout with-icon">
+                <center><img src="/static/img/visualise.png"/></center>
+                <h3>Get context</h3>
+                <p>Pre-computed statistics are presented alongside each data point, so you can see how each place fits into a larger context.</p>
+            </div>
+        </section>
+    </article>
+</div>
+
+<div class="content-container clearfix showcase">
+    <article class="clearfix wrapper">
+        <header class="column-full">
+            <h1 class="article-header">Explore our Showcase</h1>
+            <p class="article-p">Sample stories written with the help of HURUmap</p>
+        </header>
+        <section>
+            <div class="column-third callout with-icon">
+                <img src="{% static 'img/donkeys.jpg' %}"/>
+                <h2>Marakwet locals intercept lorry ferrying 30 donkeys as demand for meat rises</h2>
+                <p>By Stephen Rutto</p>
+                <p>Marakwet East locals intercepted a lorry transporting 30 donkeys in Chesoi, on suspicion that the animals had been stolen from from other areas.</p>
+                <center><a href='http://www.the-star.co.ke/news/2016/11/04/marakwet-locals-intercept-lorry-ferrying-30-donkeys-as-demand-for-meat_c1449795'><button>Read more</button></a></center>
+            </div>
+            <div class="column-third callout with-icon">
+                <img src="{% static 'img/crime.jpg' %}"/>
+                <h2>Two suspected thugs shot dead in Nairobi as crime rate soars</h2>
+                 <p>By Nancy Agutu</p>
+                <p>Two suspected thugs were shot dead in two separate incidents on Tuesday evening, and three guns with more than 30 bullets recovered</p>
+                <center><a href="http://www.the-star.co.ke/news/2016/10/19/two-suspected-thugs-shot-dead-in-nairobi-as-crime-rate-soars_c1440749"><button>Read more</button></a></center>
+            </div>
+            <div class="column-third callout with-icon">
+                <img src="{% static 'img/pregnancy.jpg' %}"/>
+                <h2>Narok, Homa Bay and West Pokot top in early pregnancy</h2>
+                <p>By Monicah Mwangi</p>
+                <p>About one in every five teenage girls between 15-19 years have either had a live birth or are pregnant with their first child, according to a report by the United Nations Population Fund.</p>
+                <center><a href="http://www.the-star.co.ke/news/2016/11/02/narok-homa-bay-and-west-pokot-top-in-early-pregnancy_c1447958"><button>Read more</button></a></center>
+            </div>
+        </section>
+    </article>
+</div>
 <div style="display:none">
     <img src="{% static 'img/census_over.png' %}"/>
     <img src="{% static 'img/development_over.png' %}"/>
