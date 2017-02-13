@@ -90,9 +90,9 @@ WAZIMAP['topics']['health'] = {
             'Health ratios'
         ]
      }
-WAZIMAP['topics']['agriculture'] = {
-        'topic': 'agriculture',
-        'name': 'agriculture',
+WAZIMAP['topics']['development'] = {
+        'topic': 'development',
+        'name': 'development',
         'icon': '/static/img/development.png',
         'order': 3,
         'desc': 'Crop production and Livestock population for the year 2014 provided by the Ministry of Agriculture, Livestock and Fisheries.',
