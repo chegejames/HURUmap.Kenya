@@ -2,27 +2,27 @@ import os
 from collections import OrderedDict
 import dj_database_url
 
-# pull in the default wazimap settings
-from wazimap.settings import *  # noqa
+# pull in the default hurumap settings
+from hurumap.settings import *  # noqa
 
 
-# insert our overrides before both census and wazimap
+# insert our overrides before both census and hurumap
 INSTALLED_APPS = ['hurumap_ke'] + INSTALLED_APPS
 
 
-DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://wazimap:wazimap@localhost/wazimap')
+DATABASE_URL = os.environ.get('DATABASE_URL', 'postgresql://hurumap_ke:hurumap_ke@localhost/hurumap_ke')
 DATABASES['default'] = dj_database_url.parse(DATABASE_URL)
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
 
-# Localise this instance of Wazimap
-WAZIMAP['name'] = 'HURUmap Kenya'
-WAZIMAP['url'] = 'http://kenya.hurumap.org'
-WAZIMAP['country_code'] = 'KE'
-WAZIMAP['country_name'] = 'Kenya'
-WAZIMAP['country_profile'] = 'country-KE-Kenya'
-WAZIMAP['profile_builder'] = 'hurumap_ke.profiles.get_census_profile'
-WAZIMAP['levels'] = {
+# Localise this instance of HURUmap
+HURUMAP['name'] = 'HURUmap Kenya'
+HURUMAP['url'] = 'https://kenya.hurumap.org'
+HURUMAP['country_code'] = 'KE'
+HURUMAP['country_name'] = 'Kenya'
+HURUMAP['country_profile'] = 'country-KE-Kenya'
+HURUMAP['profile_builder'] = 'hurumap_ke.profiles.get_census_profile'
+HURUMAP['levels'] = {
     'country': {
         'plural': 'countries',
         'children': ['county'],
@@ -31,21 +31,21 @@ WAZIMAP['levels'] = {
         'plural': 'counties',
     }
 }
-WAZIMAP['comparative_levels'] = ['country']
-WAZIMAP['geometry_data'] = {
+HURUMAP['comparative_levels'] = ['country']
+HURUMAP['geometry_data'] = {
     'country': 'geo/country.topojson',
     'county': 'geo/county.topojson',
 }
 
-WAZIMAP['ga_tracking_id'] = 'UA-44795600-8'
-WAZIMAP['twitter'] = '@Code4Africa'
+HURUMAP['ga_tracking_id'] = 'UA-44795600-8'
+HURUMAP['twitter'] = '@Code4Africa'
 
-WAZIMAP['map_centre'] = [0.3051933453207569, 37.908818734483155]
-WAZIMAP['map_zoom'] = 6
+HURUMAP['map_centre'] = [0.3051933453207569, 37.908818734483155]
+HURUMAP['map_zoom'] = 6
 
-WAZIMAP['topics'] = OrderedDict()
+HURUMAP['topics'] = OrderedDict()
 
-WAZIMAP['topics']['census'] = {
+HURUMAP['topics']['census'] = {
         'topic': 'census',
         'name': 'census 2009',
         'icon': '/static/img/census.png',
@@ -62,7 +62,7 @@ WAZIMAP['topics']['census'] = {
         ]
     }
 
-WAZIMAP['topics']['education'] = {
+HURUMAP['topics']['education'] = {
     'topic': 'education',
     'name': 'education',
     'icon': '/static/img/education.png',
@@ -72,7 +72,7 @@ WAZIMAP['topics']['education'] = {
     ]
 }
 
-WAZIMAP['topics']['health'] = {
+HURUMAP['topics']['health'] = {
         'topic': 'health',
         'name': 'health',
         'icon': '/static/img/health.png',
@@ -90,7 +90,7 @@ WAZIMAP['topics']['health'] = {
             'Health ratios'
         ]
      }
-WAZIMAP['topics']['development'] = {
+HURUMAP['topics']['development'] = {
         'topic': 'development',
         'name': 'development',
         'icon': '/static/img/development.png',

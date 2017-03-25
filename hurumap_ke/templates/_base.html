@@ -8,7 +8,7 @@
             <i id="menu-toggle" class="fa fa-bars"></i>
             {% endif %}
             <a class="title" href="{% url 'homepage' %}">
-                <img src="{% static 'img/wazimap-logo.png' %}">
+                <img src="{% static 'img/hurumap-logo.png' %}">
             </a>
             {% if not hide_nav_tools %}
                 {% block nav_tools %}
@@ -26,7 +26,7 @@
                         <a href="/#page-footer">Contact</a>
                     </div>
                     <div class="search-section div-area">
-                        <div><span>Search for a place in {{WAZIMAP.country_name}}</span> <i class="fa fa-search"></i></div>
+                        <div><span>Search for a place in {{ HURUMAP.country_name }}</span> <i class="fa fa-search"></i></div>
                     </div>
                     <div class="search-section input-area">
                         <input name="geography_select" id="geography-select" type="text" autocomplete="off">

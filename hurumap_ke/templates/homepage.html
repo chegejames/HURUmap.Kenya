@@ -14,7 +14,7 @@
         <section class="column-full clearfix">
             <h1 class="article-header">Discover the Stories Behind the Data</h1>
             <div class="search-section div-area">
-                <div><span>Search for a place in {{WAZIMAP.country_name}}</span> <i class="fa fa-search"></i></div>
+                <div><span>Search for a place in {{ HURUMAP.country_name }}</span> <i class="fa fa-search"></i></div>
             </div>
             <div class="search-section input-area">
                 <input name="geography_select" id="geography-select" type="text" autocomplete="off">
@@ -42,7 +42,7 @@
         <script>
             topics = JSON.parse("{{topics|safe}}".replace(/'/g, '"'));
             for (k in topics) {
-                document.write ('<a href="/profiles/{{WAZIMAP.country_profile}}/?topic='+  topics[k].topic  +'">')
+                document.write ('<a href="/profiles/{{ HURUMAP.country_profile }}/?topic='+  topics[k].topic  +'">')
                 document.write ('<div class="column-quarter topic">')
                 document.write ('<img src="'+ topics[k].icon +'" aria-hidden="true" style="height:80px;"/>');
                 document.write ('<div class="topic-name"> ' + topics[k].name + '</div>');
